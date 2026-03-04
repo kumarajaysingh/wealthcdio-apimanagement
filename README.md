@@ -14,7 +14,7 @@ The system exposes RESTful APIs to manage and monitor traffic light operations.
    Description: Initializes a new traffic light configuration or intersection for bangalore location.
 
 Method: POST
-Request URL: http://localhost:8080/api/intersections/<bangalore>
+Request URL: http://localhost:8080/api/intersections/bangalore
 
 Response Body:
 {
@@ -52,12 +52,12 @@ Response Body:
 2. Update Light Sequence / Control Operation
    Description: Manage state changes of lights (red, yellow, green) for multiple directions.
 Method: PUT
-URL: http://localhost:8080/api/intersections/<bangalore>/lights/<EAST>?state=<GREEN>
+URL: http://localhost:8080/api/intersections/bangalore/lights/EAST?state=GREEN
 
 3. Get Current State and Timing History
    Description: Retrieves the current traffic light states.
 Method: GET
-URL: http://localhost:8080/api/intersections/<bangalore>
+URL: http://localhost:8080/api/intersections/bangalore
 Response:
    {
    "id": "bangalore",
@@ -101,7 +101,7 @@ Response:
    Description: Retrieves the current traffic light states along with timing history details. 
 
 Method: GET
-URL: http://localhost:8080/api/intersections/<bangalore>/history
+URL: http://localhost:8080/api/intersections/bangalore/history
 
 Response:
 [
@@ -116,7 +116,7 @@ Response:
    Description: Retrieves the current traffic light states along with timing history details.
 
 Method: POST
-URL: hhttp://localhost:8080/api/intersections/bangalore/pause
+URL: http://localhost:8080/api/intersections/bangalore/pause
 
 Response:
 [
